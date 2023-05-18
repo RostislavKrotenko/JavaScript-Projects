@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Snake</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="images/snake_icon.png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="score">		
+            score: <span class="score_val">0</span>
+        </div>
+        <div class="canvas-wrapper">
+            <canvas width="400" height="400"></canvas>
+        </div>
+        <div class="controls">
+            <button class="btn-start">Start</button>
+            <button class="btn-pause">Pause</button>
+            <div class="range range-difficulty">
+                <label for="difficulty" type="range">Speed</label>
+                <div class="range_inputWrapper">
+                    <span class="range_inputSlider"></span>
+                    <div class="range_inputValue"></div>
+                    <input type="range" name="difficulty"
+                       value="8" min="1" max="10" step="1" >
+                </div>
+            </div>
+            
+            <div class="range range-columns">
+                <label for="columns" type="range">Cells</label>
+                <div class="range_inputWrapper">
+                    <span class="range_inputSlider"></span>
+                    <div class="range_inputValue"></div>
+                    <input type="range" name="columns"
+                         value="20" min="10" max="100" step="10">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="field.js"></script>
+</body>
+</html>
